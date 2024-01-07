@@ -19,11 +19,11 @@ export const BarraBusqueda: React.FC<BarraBusquedaProps> = ({
 
   return (
     <div className="m-4">
-      <div className="flex rounded-lg border-2">
+      <div className="flex rounded-full border-2">
         <input
           type="text"
-          placeholder="Buscar autos por marca y modelo..."
-          className="w-full rounded-lg p-2 focus:outline-none"
+          placeholder="Buscar autos por marca y/o modelo..."
+          className="w-full rounded-full p-2 pl-4 focus:outline-none"
           value={term}
           onChange={handleInputChange}
         />

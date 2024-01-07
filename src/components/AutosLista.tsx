@@ -34,11 +34,11 @@ export const AutosLista: React.FC<AutosListaProps> = ({ busqueda }) => {
 
   return (
     <div>
-      <div className="flex justify-left m-4">
+      <div className="flex m-4">
         <h1 className="text-xl font-bold">Listado de Autos | AutoShop</h1>
       </div>
 
-      <div className="flex flex-wrap justify-center m-2">
+      <div className="flex flex-1 flex-wrap m-2">
         {autosMostrar.map((auto) => (
           <Link
             href={`/${auto.model}`}
@@ -60,7 +60,7 @@ export const AutosLista: React.FC<AutosListaProps> = ({ busqueda }) => {
 
                 <div className="flex flex-1 flex-col p-5 space-y-2 border-t-2 bg-slate-50 rounded-b-lg cursor-pointer hover:duration-200 hover:bg-slate-200">
                   <h2 className="text-xl">{auto.brand}</h2>
-                  <span className="text-">{auto.model}</span>
+                  <span className="font-bold">{auto.model}</span>
                 </div>
               </div>
             </div>

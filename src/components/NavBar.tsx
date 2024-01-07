@@ -12,14 +12,14 @@ export const NavBar = () => {
   };
 
   return (
-    <div
-      className="flex justify-center items-center gap-1 p-4 border-b-2 border-grey-500 bg-transparent backdrop-blur-md font-bold text-2xl fixed right-0 left-0 cursor-pointer"
-      onClick={handleScrollToTop}
-    >
-      <div className="text-3xl">
+    <div className="flex justify-center items-center gap-1 p-4 border-b-2 border-grey-500 bg-transparent backdrop-blur-md font-bold text-2xl fixed right-0 left-0">
+      <div
+        className="flex items-center text-3xl cursor-pointer"
+        onClick={handleScrollToTop}
+      >
         <FcAutomotive />
+        <h1>AutoShop</h1>
       </div>
-      <h1>AutoShop</h1>
     </div>
   );
 };
